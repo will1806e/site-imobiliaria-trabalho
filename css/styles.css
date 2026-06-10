@@ -1,0 +1,44 @@
+body, html{
+    padding: 0px;
+    margin: 0px;
+}
+
+hr{
+    width: 100%;
+    height: 2px;
+
+}
+
+/*Cabeçalho*/
+header > div{
+    height: 6rem;
+    display: flex;
+    padding: 0.5rem 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icone{
+    height: 2rem;
+    width: 2rem;
+}
+
+.logo{
+    height: auto;
+    width: 12.5rem;
+}
+
+.icone-usuario{
+    height: auto;
+    width: 3rem;
+}
+
+.tooltip-custom {
+    --bs-tooltip-bg: lightgray;
+    --bs-tooltip-color: black;
+    --bs-tooltip-border-radius: 10px;
+    --bs-tooltip-opacity: 1;
+    --bs-tooltip-padding-x: 10px;
+    --bs-tooltip-padding-x: 15px;
+}

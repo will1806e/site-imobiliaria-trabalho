@@ -1,0 +1,120 @@
+body, html{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.h1-hr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.linha-h1{
+    width: 80%;
+    background-color: black;
+    border: 1px black solid;
+    border-radius: 50%;
+}
+/*Organização do banner*/
+
+.veja{
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+}
+
+.banners-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem 5rem;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 5rem;
+}
+
+.banner-imoveis{
+    color: rgba(0, 0, 0, 0.623);
+    width: 25rem;
+    height: 30rem;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.678);
+    transition: 0.8s;
+}
+
+.banner-imoveis:hover{
+    transform: scale(1.05);
+}
+
+.banner-imoveis:active{
+    transform: scale(0.98);
+}
+
+.banner-categorias-img{
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+}
+
+.cat-num{
+    display: flex;
+    gap: 0.1rem;
+}
+
+.categorias-img{
+    width: 25px;
+    opacity: 0.7;
+}
+
+.banner-imagem{
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    width: 100%;
+    height: 220px;
+}
+
+.banner-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    padding-bottom: 2rem;
+    align-items: start;
+    justify-content: start;
+    gap: 1.5rem;
+    
+}
+
+.banner-categorias{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-spans{
+    font-size: 1rem;
+}
+
+.preco-titulo{
+    color: rgba(0, 0, 0, 0.788);
+}
+/*Carrossel*/
+
+.carrossel-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner{
+    border-radius: 20px;
+}
+
+
