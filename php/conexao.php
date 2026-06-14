@@ -1,15 +1,15 @@
 <?php
-//Dados da conexão
+// Dados da conexao do XAMPP/MySQL.
 $host = "localhost";
 $nome = "root";
 $senha = "";
 $bd = "imobiliaria";
 
-// Variavel de conexão
-$c = mysqli_connect($host,$nome,$senha,$bd);
+mysqli_report(MYSQLI_REPORT_OFF);
 
-//Verificação se a conexão foi estabelecida
-if (!$c) {
-    die("Erro de Conexão: " . mysqli_connect_error());
+$c = mysqli_connect($host, $nome, $senha, $bd);
+
+if ($c) {
+    mysqli_set_charset($c, "utf8mb4");
 }
 ?>

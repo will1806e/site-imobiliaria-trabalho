@@ -1,120 +1,122 @@
-body, html{
-    padding: 0;
+.carrossel-section {
+    display: flex;
+    justify-content: center;
+    padding: clamp(2rem, 5vw, 4rem) 1rem 1rem;
+}
+
+.carrossel {
+    width: min(900px, 100%);
+}
+
+.carousel-inner {
+    border-radius: 8px;
+}
+
+.imagem-carrossel {
+    height: clamp(240px, 45vw, 430px);
+    object-fit: cover;
+}
+
+.secao-imoveis {
+    padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 4vw, 4rem);
+}
+
+.titulo-secao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.titulo-secao span {
+    color: #52616f;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.titulo-secao h2,
+.titulo-secao h1 {
     margin: 0;
+    color: #18324a;
 }
 
-h1{
-    text-align: center;
+.aviso-banco {
+    width: min(850px, 100%);
 }
 
-.h1-hr{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.linha-h1{
-    width: 80%;
-    background-color: black;
-    border: 1px black solid;
-    border-radius: 50%;
-}
-/*Organização do banner*/
-
-.veja{
-    text-align: center;
-    padding: 5rem 0 2rem 0;
-}
-
-.banners-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 2rem 5rem;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 5rem;
-}
-
-.banner-imoveis{
-    color: rgba(0, 0, 0, 0.623);
-    width: 25rem;
-    height: 30rem;
-    display: flex;
-    border-radius: 15px;
-    flex-direction: column;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.678);
-    transition: 0.8s;
-}
-
-.banner-imoveis:hover{
-    transform: scale(1.05);
-}
-
-.banner-imoveis:active{
-    transform: scale(0.98);
-}
-
-.banner-categorias-img{
-    display: flex;
-    flex-direction: row;
-    gap: 0.8rem;
-}
-
-.cat-num{
-    display: flex;
-    gap: 0.1rem;
-}
-
-.categorias-img{
-    width: 25px;
-    opacity: 0.7;
-}
-
-.banner-imagem{
-    border-top-left-radius: 13px;
-    border-top-right-radius: 13px;
-    width: 100%;
-    height: 220px;
-}
-
-.banner-div{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding: 0.5rem;
-    padding-bottom: 2rem;
-    align-items: start;
-    justify-content: start;
+.banners-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
-    
 }
 
-.banner-categorias{
+.banner-imoveis {
+    min-height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #dfe3e8;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 10px 24px rgba(24, 50, 74, 0.08);
 }
 
-.banner-spans{
-    font-size: 1rem;
+.banner-imagem {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
 }
 
-.preco-titulo{
-    color: rgba(0, 0, 0, 0.788);
+.banner-div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
 }
-/*Carrossel*/
 
-.carrossel-section{
+.preco-titulo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 0.25rem;
 }
 
-.carousel-inner{
-    border-radius: 20px;
+.preco-titulo h3 {
+    margin: 0;
+    color: #18324a;
+    font-size: 1.25rem;
 }
 
+.preco-titulo strong {
+    color: #0f6f5c;
+    font-size: 1.15rem;
+}
 
+.finalidade {
+    width: fit-content;
+    padding: 0.25rem 0.55rem;
+    border-radius: 999px;
+    color: #18324a;
+    background: #e3edf5;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.banner-div p {
+    margin: 0;
+    color: #52616f;
+}
+
+.banner-rodape {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid #edf0f2;
+    color: #334e68;
+    font-weight: 700;
+}

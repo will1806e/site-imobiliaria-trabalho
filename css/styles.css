@@ -1,44 +1,235 @@
-body, html{
-    padding: 0px;
-    margin: 0px;
+* {
+    box-sizing: border-box;
 }
 
-hr{
-    width: 100%;
-    height: 2px;
-
+body,
+html {
+    margin: 0;
+    padding: 0;
+    color: #1f2933;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f7f9;
 }
 
-/*Cabeçalho*/
-header > div{
-    height: 6rem;
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.cabecalho {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     display: flex;
-    padding: 0.5rem 3rem;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 82px;
+    padding: 0.75rem clamp(1rem, 4vw, 4rem);
+    background: #ffffff;
+    border-bottom: 1px solid #dfe3e8;
 }
 
-.menu-icone{
-    height: 2rem;
-    width: 2rem;
-}
-
-.logo{
+.logo {
+    width: 170px;
+    max-width: 45vw;
     height: auto;
-    width: 12.5rem;
 }
 
-.icone-usuario{
-    height: auto;
-    width: 3rem;
+.navegacao {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
-.tooltip-custom {
-    --bs-tooltip-bg: lightgray;
-    --bs-tooltip-color: black;
-    --bs-tooltip-border-radius: 10px;
-    --bs-tooltip-opacity: 1;
-    --bs-tooltip-padding-x: 10px;
-    --bs-tooltip-padding-x: 15px;
+.navegacao a,
+.botao-principal {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 0.65rem 1rem;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #18324a;
+    background: #eef3f7;
+}
+
+.navegacao a:hover,
+.botao-principal:hover {
+    background: #dce8f0;
+}
+
+.hero {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+    background: #18232e;
+}
+
+.hero img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.62;
+}
+
+.hero-conteudo {
+    position: relative;
+    width: min(820px, 100%);
+    padding: clamp(2rem, 7vw, 5rem);
+    color: #ffffff;
+}
+
+.hero-conteudo p {
+    margin: 0 0 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.hero-conteudo h1 {
+    margin: 0 0 1.5rem;
+    font-size: clamp(2rem, 6vw, 4.5rem);
+    line-height: 1.05;
+    text-align: left;
+}
+
+.hero-conteudo .botao-principal {
+    color: #12202c;
+    background: #ffffff;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    padding: 2rem clamp(1rem, 4vw, 4rem);
+    color: #ffffff;
+    background: #18324a;
+}
+
+footer ul {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.admin-body {
+    background: #eef2f5;
+}
+
+.admin-layout {
+    width: min(1180px, calc(100% - 2rem));
+    margin: 2rem auto;
+    display: grid;
+    gap: 2rem;
+}
+
+.formulario-admin,
+.lista-admin {
+    background: #ffffff;
+    border: 1px solid #dfe3e8;
+    border-radius: 8px;
+    padding: clamp(1rem, 3vw, 2rem);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.form-grid label,
+.radio-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    font-weight: 700;
+}
+
+.form-grid input,
+.form-grid select,
+.form-grid textarea {
+    width: 100%;
+    min-height: 42px;
+    padding: 0.65rem 0.75rem;
+    border: 1px solid #b9c3cc;
+    border-radius: 6px;
+    font: inherit;
+    font-weight: 400;
+    background: #ffffff;
+}
+
+.form-grid textarea {
+    resize: vertical;
+}
+
+.campo-inteiro {
+    grid-column: 1 / -1;
+}
+
+.radio-box {
+    margin: 0;
+    padding: 0.75rem;
+    border: 1px solid #b9c3cc;
+    border-radius: 6px;
+}
+
+.radio-box legend {
+    float: none;
+    width: auto;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.radio-box label {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1rem;
+    font-weight: 400;
+}
+
+.acoes-form,
+.acoes-tabela {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.thumb-admin {
+    width: 72px;
+    height: 54px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.titulo-secao.alinhado-esquerda {
+    align-items: flex-start;
+    text-align: left;
+}
+
+@media (max-width: 720px) {
+    .cabecalho {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .navegacao {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
 }
