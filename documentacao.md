@@ -10,7 +10,7 @@ Tema do sistema: plataforma web simples para controle de uma imobiliaria.
 
 O projeto simula um site de imobiliaria com uma pagina inicial publica e uma area administrativa. Na pagina inicial o visitante visualiza os imoveis cadastrados, com imagem, titulo, descricao, tipo, finalidade, valor, cidade e bairro. Na area administrativa o usuario pode cadastrar novos imoveis, consultar a lista completa, editar dados existentes e excluir registros.
 
-O sistema foi desenvolvido com PHP e MySQL no backend, HTML/CSS no frontend e Bootstrap para componentes de interface.
+O sistema foi desenvolvido com PHP e MySQL no backend, HTML/CSS no frontend e Bootstrap para componentes de interface. Nesta maquina, o MySQL do XAMPP foi configurado na porta `3307`, porque a porta `3306` ja estava ocupada pelo servico `MySQL80`.
 
 ## Funcionalidades implementadas
 

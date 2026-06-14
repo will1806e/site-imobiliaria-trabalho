@@ -6,9 +6,10 @@ Trabalho pratico em PHP, MySQL, HTML, CSS e Bootstrap para gerenciamento de imov
 
 1. Copie o projeto para a pasta `htdocs` do XAMPP.
 2. Inicie Apache e MySQL no painel do XAMPP.
-3. Abra o phpMyAdmin e importe o arquivo `banco.sql`.
-4. Acesse `http://localhost/site-imobiliaria-trabalho/html/index.php`.
-5. Acesse a area administrativa em `http://localhost/site-imobiliaria-trabalho/html/admin.php`.
+3. Se ja existir outro MySQL usando a porta 3306, configure o MySQL do XAMPP na porta `3307`.
+4. Abra o phpMyAdmin e importe o arquivo `banco.sql`.
+5. Acesse `http://localhost/site-imobiliaria-trabalho/html/index.php`.
+6. Acesse a area administrativa em `http://localhost/site-imobiliaria-trabalho/html/admin.php`.
 
 ## Funcionalidades
 
