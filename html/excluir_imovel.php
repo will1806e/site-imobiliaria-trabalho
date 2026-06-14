@@ -1,6 +1,9 @@
 <?php
+require_once "../php/auth.php";
 require_once "../php/conexao.php";
 require_once "../php/funcoes.php";
+
+exigir_admin();
 
 $id = (int) ($_GET["id"] ?? 0);
 

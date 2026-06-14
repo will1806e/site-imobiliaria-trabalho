@@ -16,6 +16,7 @@ Trabalho pratico em PHP, MySQL, HTML, CSS e Bootstrap para gerenciamento de imov
 - Pagina inicial com listagem dos imoveis cadastrados.
 - Pagina de detalhes para abrir cada imovel individualmente.
 - Area administrativa para cadastrar, listar, editar e excluir imoveis.
+- Login administrativo protegido por sessao. Senha padrao: `admin`.
 - Tema claro e tema escuro com preferencia salva no navegador.
 - Formulario com texto, textarea, select, radio, upload de imagem principal e upload de imagens adicionais.
 - Armazenamento das imagens enviadas na pasta `uploads`.

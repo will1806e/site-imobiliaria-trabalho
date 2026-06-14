@@ -1,6 +1,9 @@
 <?php
+require_once "../php/auth.php";
 require_once "../php/conexao.php";
 require_once "../php/funcoes.php";
+
+exigir_admin();
 
 $id = isset($_GET["id"]) ? (int) $_GET["id"] : 0;
 $imovel = $id > 0 ? buscar_imovel_por_id($c, $id) : null;
@@ -24,6 +27,7 @@ $mensagem = $_GET["msg"] ?? "";
         <nav class="navegacao">
             <a href="index.php">Inicio</a>
             <a href="admin.php">Administrativo</a>
+            <a href="logout.php">Sair</a>
             <button class="tema-toggle" type="button" data-theme-toggle aria-label="Alternar tema">Tema</button>
         </nav>
     </header>

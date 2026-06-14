@@ -228,6 +228,19 @@ footer ul {
     gap: 2rem;
 }
 
+.login-layout {
+    min-height: calc(100vh - 82px);
+    display: grid;
+    place-items: center;
+    width: min(520px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.login-card {
+    width: 100%;
+}
+
 .formulario-admin,
 .lista-admin {
     overflow: hidden;

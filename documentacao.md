@@ -16,6 +16,7 @@ O sistema foi desenvolvido com PHP e MySQL no backend, HTML/CSS no frontend e Bo
 
 - Visualizacao dos imoveis na pagina inicial.
 - Abertura de uma pagina detalhada para cada imovel.
+- Login administrativo com senha protegida por hash no codigo.
 - Cadastro de imoveis pela area administrativa.
 - Listagem dos imoveis cadastrados em tabela administrativa.
 - Edicao de imoveis existentes.

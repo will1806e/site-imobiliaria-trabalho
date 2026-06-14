@@ -1,4 +1,5 @@
 <?php
+require_once "../php/auth.php";
 require_once "../php/conexao.php";
 require_once "../php/funcoes.php";
 
@@ -24,6 +25,9 @@ $galeria = $imovel ? imagens_galeria_imovel($c, $imovel) : [];
         <nav class="navegacao">
             <a href="index.php#imoveis">Imoveis</a>
             <a href="admin.php">Administrativo</a>
+            <?php if (admin_logado()): ?>
+                <a href="logout.php">Sair</a>
+            <?php endif; ?>
             <button class="tema-toggle" type="button" data-theme-toggle aria-label="Alternar tema">Tema</button>
         </nav>
     </header>
@@ -48,7 +52,9 @@ $galeria = $imovel ? imagens_galeria_imovel($c, $imovel) : [];
                     <strong><?= formatar_moeda($imovel["valor"]) ?></strong>
                     <p><?= limpar_texto($imovel["bairro"]) ?>, <?= limpar_texto($imovel["cidade"]) ?></p>
                     <div class="detalhe-acoes">
-                        <a class="botao-principal" href="admin.php?id=<?= (int) $imovel["id"] ?>">Editar imovel</a>
+                        <?php if (admin_logado()): ?>
+                            <a class="botao-principal" href="admin.php?id=<?= (int) $imovel["id"] ?>">Editar imovel</a>
+                        <?php endif; ?>
                         <a class="botao-secundario" href="index.php#imoveis">Voltar</a>
                     </div>
                 </div>
