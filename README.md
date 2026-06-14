@@ -14,7 +14,9 @@ Trabalho pratico em PHP, MySQL, HTML, CSS e Bootstrap para gerenciamento de imov
 ## Funcionalidades
 
 - Pagina inicial com listagem dos imoveis cadastrados.
+- Pagina de detalhes para abrir cada imovel individualmente.
 - Area administrativa para cadastrar, listar, editar e excluir imoveis.
+- Tema claro e tema escuro com preferencia salva no navegador.
 - Formulario com texto, textarea, select, radio, upload de imagem principal e upload de imagens adicionais.
 - Armazenamento das imagens enviadas na pasta `uploads`.
 - Banco MySQL com tabelas `imoveis` e `imovel_imagens`.

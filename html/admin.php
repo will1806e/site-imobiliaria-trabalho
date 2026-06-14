@@ -24,6 +24,7 @@ $mensagem = $_GET["msg"] ?? "";
         <nav class="navegacao">
             <a href="index.php">Inicio</a>
             <a href="admin.php">Administrativo</a>
+            <button class="tema-toggle" type="button" data-theme-toggle aria-label="Alternar tema">Tema</button>
         </nav>
     </header>
 
@@ -135,6 +136,7 @@ $mensagem = $_GET["msg"] ?? "";
                                 <td><?= formatar_moeda($item["valor"]) ?></td>
                                 <td><?= limpar_texto($item["bairro"]) ?>, <?= limpar_texto($item["cidade"]) ?></td>
                                 <td class="acoes-tabela">
+                                    <a class="btn btn-sm btn-outline-secondary" href="imovel.php?id=<?= (int) $item["id"] ?>">Ver</a>
                                     <a class="btn btn-sm btn-outline-primary" href="admin.php?id=<?= (int) $item["id"] ?>">Editar</a>
                                     <a class="btn btn-sm btn-outline-danger" href="excluir_imovel.php?id=<?= (int) $item["id"] ?>" onclick="return confirm('Excluir este imovel?')">Excluir</a>
                                 </td>
@@ -145,5 +147,6 @@ $mensagem = $_GET["msg"] ?? "";
             </div>
         </section>
     </main>
+    <script src="../js/tema.js"></script>
 </body>
 </html>

@@ -35,6 +35,12 @@ function buscar_imoveis($c): array
 function buscar_imovel_por_id($c, int $id): ?array
 {
     if (!tabela_imoveis_existe($c)) {
+        foreach (imoveis_exemplo() as $imovel) {
+            if ((int) $imovel["id"] === $id) {
+                return $imovel;
+            }
+        }
+
         return null;
     }
 
@@ -45,6 +51,29 @@ function buscar_imovel_por_id($c, int $id): ?array
     $imovel = mysqli_fetch_assoc($resultado);
 
     return $imovel ?: null;
+}
+
+function imagens_galeria_imovel($c, array $imovel): array
+{
+    $imagens = [];
+
+    if (!empty($imovel["imagem"])) {
+        $imagens[] = ["imagem" => $imovel["imagem"]];
+    }
+
+    if (!empty($imovel["id"])) {
+        $imagens = array_merge($imagens, imovel_imagens_adicionais($c, (int) $imovel["id"]));
+    }
+
+    if (count($imagens) > 1) {
+        return $imagens;
+    }
+
+    return array_merge($imagens, [
+        ["imagem" => "../imagens/modern-childrens-room.png"],
+        ["imagem" => "../imagens/mid-century-modern-dining-area.png"],
+        ["imagem" => "../imagens/interior-of-living-room-at-night-with-illuminated-tv-and-ceiling.png"],
+    ]);
 }
 
 function imovel_imagens_adicionais($c, int $id): array

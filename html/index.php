@@ -22,6 +22,7 @@ $imoveis = buscar_imoveis($c);
         <nav class="navegacao">
             <a href="#imoveis">Imoveis</a>
             <a href="admin.php">Administrativo</a>
+            <button class="tema-toggle" type="button" data-theme-toggle aria-label="Alternar tema">Tema</button>
         </nav>
     </header>
 
@@ -76,6 +77,7 @@ $imoveis = buscar_imoveis($c);
 
             <div class="banners-container">
                 <?php foreach ($imoveis as $imovel): ?>
+                    <a class="banner-link" href="imovel.php?id=<?= (int) $imovel["id"] ?>" aria-label="Abrir detalhes de <?= limpar_texto($imovel["titulo"]) ?>">
                     <article class="banner-imoveis">
                         <img class="banner-imagem" src="<?= limpar_texto(caminho_imagem($imovel["imagem"])) ?>" alt="<?= limpar_texto($imovel["titulo"]) ?>">
                         <div class="banner-div">
@@ -89,8 +91,10 @@ $imoveis = buscar_imoveis($c);
                                 <span><?= limpar_texto($imovel["tipo_imovel"]) ?></span>
                                 <span><?= limpar_texto($imovel["bairro"]) ?>, <?= limpar_texto($imovel["cidade"]) ?></span>
                             </div>
+                            <span class="ver-detalhes">Ver detalhes</span>
                         </div>
                     </article>
+                    </a>
                 <?php endforeach; ?>
             </div>
         </section>
@@ -110,5 +114,6 @@ $imoveis = buscar_imoveis($c);
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/tema.js"></script>
 </body>
 </html>

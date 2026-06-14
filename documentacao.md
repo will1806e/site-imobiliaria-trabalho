@@ -8,13 +8,14 @@ Tema do sistema: plataforma web simples para controle de uma imobiliaria.
 
 ## Descricao do projeto
 
-O projeto simula um site de imobiliaria com uma pagina inicial publica e uma area administrativa. Na pagina inicial o visitante visualiza os imoveis cadastrados, com imagem, titulo, descricao, tipo, finalidade, valor, cidade e bairro. Na area administrativa o usuario pode cadastrar novos imoveis, consultar a lista completa, editar dados existentes e excluir registros.
+O projeto simula um site de imobiliaria com uma pagina inicial publica, pagina detalhada de cada imovel e uma area administrativa. Na pagina inicial o visitante visualiza os imoveis cadastrados, com imagem, titulo, descricao, tipo, finalidade, valor, cidade e bairro. Ao abrir um imovel, o visitante acessa informacoes completas, resumo e galeria. Na area administrativa o usuario pode cadastrar novos imoveis, consultar a lista completa, editar dados existentes e excluir registros.
 
 O sistema foi desenvolvido com PHP e MySQL no backend, HTML/CSS no frontend e Bootstrap para componentes de interface. Nesta maquina, o MySQL do XAMPP foi configurado na porta `3307`, porque a porta `3306` ja estava ocupada pelo servico `MySQL80`.
 
 ## Funcionalidades implementadas
 
 - Visualizacao dos imoveis na pagina inicial.
+- Abertura de uma pagina detalhada para cada imovel.
 - Cadastro de imoveis pela area administrativa.
 - Listagem dos imoveis cadastrados em tabela administrativa.
 - Edicao de imoveis existentes.
@@ -23,6 +24,7 @@ O sistema foi desenvolvido com PHP e MySQL no backend, HTML/CSS no frontend e Bo
 - Upload de multiplas imagens adicionais.
 - Exibicao da imagem principal na pagina inicial.
 - Layout organizado e responsivo.
+- Alternancia entre tema claro e tema escuro.
 - Arquivo SQL para criacao do banco de dados.
 
 ## Estrutura do banco
@@ -71,12 +73,17 @@ Area administrativa com formulario, listagem e acoes de editar/excluir:
 
 ![Area administrativa](docs/prints/admin.png)
 
+Pagina de detalhes do imovel:
+
+![Detalhes do imovel](docs/prints/detalhe.png)
+
 ## Apresentacao
 
 Durante a apresentacao, demonstrar:
 
 - Importacao do arquivo `banco.sql`.
 - Abertura da pagina inicial.
+- Abertura da pagina de detalhes de um imovel.
 - Cadastro de um novo imovel com imagem.
 - Edicao do imovel cadastrado.
 - Exclusao do imovel.
