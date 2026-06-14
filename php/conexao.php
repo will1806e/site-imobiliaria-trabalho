@@ -7,7 +7,7 @@ $bd = "imobiliaria";
 
 mysqli_report(MYSQLI_REPORT_OFF);
 
-$c = mysqli_connect($host, $nome, $senha, $bd);
+$c = @mysqli_connect($host, $nome, $senha, $bd);
 
 if ($c) {
     mysqli_set_charset($c, "utf8mb4");
