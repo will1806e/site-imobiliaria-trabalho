@@ -39,6 +39,7 @@ O sistema foi desenvolvido com PHP, MySQL, HTML, CSS e Bootstrap. Nesta maquina,
 - Armazenamento das imagens na pasta `uploads`.
 - Exibicao da imagem principal na pagina inicial.
 - Tema claro e tema escuro com preferencia salva no navegador.
+- Tela de carregamento animada ao navegar entre paginas e ao enviar formularios.
 - Layout organizado, responsivo e com CSS proprio.
 - Navegacao funcional entre pagina inicial, detalhes, login e administracao.
 - Arquivo `banco.sql` para criacao do banco de dados e tabelas.
@@ -85,7 +86,7 @@ Armazena imagens adicionais de cada imovel.
 - `php/auth.php`: funcoes de autenticacao administrativa.
 - `css/styles.css`: estilos gerais, admin, detalhes e temas.
 - `css/index.css`: estilos especificos da pagina inicial e cards.
-- `js/tema.js`: alternancia entre tema claro e escuro.
+- `js/tema.js`: alternancia entre tema claro e escuro e controle da tela de carregamento.
 - `uploads/`: pasta onde as imagens enviadas ficam armazenadas.
 - `banco.sql`: script de criacao do banco e tabelas.
 
@@ -146,6 +147,7 @@ Durante a apresentacao, o grupo deve demonstrar:
 - Funcionamento da pagina inicial.
 - Abertura da pagina de detalhes de um imovel.
 - Alternancia entre tema claro e tema escuro.
+- Tela de carregamento ao trocar de pagina ou enviar formularios.
 - Login na area administrativa com a senha `admin`.
 - Cadastro de um novo imovel com imagem.
 - Edicao do imovel cadastrado.
