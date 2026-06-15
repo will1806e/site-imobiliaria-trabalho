@@ -113,6 +113,6 @@ $galeria = $imovel ? imagens_galeria_imovel($c, $imovel) : [];
         <?php endif; ?>
     </main>
 
-    <script src="../js/tema.js"></script>
+    <script src="../js/tema.js?v=loading"></script>
 </body>
 </html>

@@ -151,6 +151,6 @@ $mensagem = $_GET["msg"] ?? "";
             </div>
         </section>
     </main>
-    <script src="../js/tema.js"></script>
+    <script src="../js/tema.js?v=loading"></script>
 </body>
 </html>

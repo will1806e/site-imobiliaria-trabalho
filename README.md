@@ -20,6 +20,7 @@ Integrantes: Alexandro Willian e Pedro Kalyd.
 - Area administrativa para cadastrar, listar, editar e excluir imoveis.
 - Login administrativo protegido por sessao. Senha padrao: `admin`.
 - Tema claro e tema escuro com preferencia salva no navegador.
+- Tela de carregamento animada entre paginas e envio de formularios.
 - Formulario com texto, textarea, select, radio, upload de imagem principal e upload de imagens adicionais.
 - Armazenamento das imagens enviadas na pasta `uploads`.
 - Banco MySQL com tabelas `imoveis` e `imovel_imagens`.

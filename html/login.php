@@ -69,6 +69,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </section>
     </main>
 
-    <script src="../js/tema.js"></script>
+    <script src="../js/tema.js?v=loading"></script>
 </body>
 </html>
