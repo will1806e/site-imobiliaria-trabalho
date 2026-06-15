@@ -4,8 +4,7 @@
 
 Integrantes do grupo:
 
-- Alexandro
-- Willian
+- Alexandro Willian
 - Pedro Kalyd
 
 Tema do sistema: desenvolvimento de um sistema web para controle de uma imobiliaria.
@@ -103,14 +102,11 @@ Armazena imagens adicionais de cada imovel.
 
 ## Divisao das tarefas
 
-Alexandro:
+Alexandro Willian:
 
 - Apoio na definicao das funcionalidades do sistema.
 - Organizacao dos requisitos do trabalho.
 - Apoio na validacao do cadastro, edicao e exclusao de imoveis.
-
-Willian:
-
 - Criacao da estrutura inicial do projeto.
 - Implementacao das paginas em PHP.
 - Implementacao da conexao com MySQL.

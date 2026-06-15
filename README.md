@@ -2,7 +2,7 @@
 
 Trabalho pratico em PHP, MySQL, HTML, CSS e Bootstrap para gerenciamento de imoveis.
 
-Integrantes: Alexandro, Willian e Pedro Kalyd.
+Integrantes: Alexandro Willian e Pedro Kalyd.
 
 ## Como executar
 
