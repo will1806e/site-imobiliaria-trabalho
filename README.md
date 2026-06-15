@@ -2,6 +2,8 @@
 
 Trabalho pratico em PHP, MySQL, HTML, CSS e Bootstrap para gerenciamento de imoveis.
 
+Integrantes: Alexandro, Willian e Pedro Kalyd.
+
 ## Como executar
 
 1. Copie o projeto para a pasta `htdocs` do XAMPP.
@@ -22,3 +24,7 @@ Trabalho pratico em PHP, MySQL, HTML, CSS e Bootstrap para gerenciamento de imov
 - Armazenamento das imagens enviadas na pasta `uploads`.
 - Banco MySQL com tabelas `imoveis` e `imovel_imagens`.
 - Layout com CSS proprio, Bootstrap e responsividade basica.
+
+## Documentacao
+
+A documentacao completa do site esta no arquivo `documentacao.md`.
