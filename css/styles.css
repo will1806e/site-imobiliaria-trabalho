@@ -32,13 +32,13 @@
     --texto: #eef6f9;
     --texto-suave: #b8c7d4;
     --borda: #2f4558;
-    --fundo: #101820;
+    --fundo: #1b2d3c;
     --branco: #172331;
     --sombra: 0 20px 55px rgba(0, 0, 0, 0.38);
     --sombra-forte: 0 30px 80px rgba(0, 0, 0, 0.52);
-    --header-bg: rgba(13, 20, 29, 0.84);
-    --card-bg: rgba(23, 35, 49, 0.94);
-    --input-bg: #121d28;
+    --header-bg: rgba(29, 49, 64, 0.9);
+    --card-bg: rgba(30, 48, 63, 0.94);
+    --input-bg: #1a2b39;
     --table-stripe: rgba(255, 255, 255, 0.035);
     --hero-overlay: linear-gradient(90deg, rgba(5, 10, 18, 0.92) 0%, rgba(10, 18, 28, 0.62) 52%, rgba(93, 217, 193, 0.16) 100%);
 }
@@ -64,7 +64,7 @@ html {
 :root[data-theme="dark"] body,
 :root[data-theme="dark"] html {
     background:
-        linear-gradient(180deg, #0b1118 0%, var(--fundo) 48%, #14222b 100%);
+        linear-gradient(180deg, #172838 0%, var(--fundo) 48%, #203b47 100%);
 }
 
 a {
@@ -101,6 +101,13 @@ textarea:focus-visible {
 .marca {
     display: inline-flex;
     align-items: center;
+}
+
+:root[data-theme="dark"] .marca {
+    padding: 0.35rem 0.65rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
 }
 
 .logo {
